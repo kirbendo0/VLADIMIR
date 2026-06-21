@@ -6,7 +6,36 @@
     <title>Vladimir Top - Blood Tracker</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
+    /* BOUTON RETOUR AU HUB */
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #777;
+            color: #eee;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .home-btn:hover {
+            border-color: white;
+            color: white;
+            transform: translateX(-5px); /* Petit effet de glissement vers la gauche */
+        }
+
+        @media (max-width: 800px) {
+            .home-btn { top: 10px; left: 10px; padding: 5px 10px; font-size: 0.8rem; }
+        }
     <style>
         :root {
             --bg: #050000;
